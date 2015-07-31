@@ -1,9 +1,6 @@
 function getSearches() {
     return [
-        'Asurion',
-        'GovHire',
-        'CoSourcing Partners',
-        'Incentive Technology Group'
+    // searches here
     ];
 }
 module.exports.getSearches = getSearches;

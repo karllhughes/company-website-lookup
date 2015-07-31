@@ -16,7 +16,7 @@ async.each(searches,
         google(search, function (err, next, links) {
             if (links) {
                 var title = links[0].title;
-                if (title.indexOf("Map for ") > -1) {
+                if (title.indexOf("Map for ") > -1 && links[1]) {
                     title = links[1].title;
                     var link = links[1].link;
                 } else {
@@ -38,7 +38,7 @@ async.each(searches,
         if (results[0]) {
             json2csv({ data: results }, function(err, csv) {
                 if (err) console.log(err);
-                fs.writeFile('test.csv', csv, function(err) {
+                fs.writeFile('output.csv', csv, function(err) {
                     if (err) throw err;
                     console.log('file saved');
                 });
