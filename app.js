@@ -14,7 +14,6 @@ google.resultsPerPage = 3;
 async.each(searches,
     function(search, callback) {
         google(search, function (err, next, links) {
-            console.log(links);
             if (links) {
                 var title = links[0].title;
                 if (title.indexOf("Map for ") > -1) {
@@ -44,6 +43,8 @@ async.each(searches,
                     console.log('file saved');
                 });
             });
+        } else {
+            console.log("No results received.");
         }
     }
 );
