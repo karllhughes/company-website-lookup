@@ -1,0 +1,13 @@
+{
+  "name": "googleFirst",
+  "version": "0.1.0",
+  "description": "Get first result from google",
+  "main": "app.js",
+  "author": "Karl L. Hughes <karl@packback.co>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.0",
+    "csv": "^0.4.5",
+    "json2csv": "^2.8.2"
+  }
+}
