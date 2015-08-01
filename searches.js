@@ -1,6 +1,6 @@
 function getSearches() {
     return [
-    // searches here
+        // List of searches
     ];
 }
 module.exports.getSearches = getSearches;
